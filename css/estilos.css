@@ -242,7 +242,7 @@ h3 { font-size: 1.3rem; }
 
 .navbar.scrolled {
 
- background: rgba(250,245,238,.95);
+ background: rgba(250,245,238,.98);
 
  backdrop-filter: blur(12px);
 
@@ -552,11 +552,13 @@ body::before {
 
 
 
+/* CORRECCIÓN: Color del subtítulo del Hero para mejor legibilidad */
+
 .hero-sub {
 
  font-size: 1rem;
 
- color: rgba(242,232,217,.65);
+ color: #E6D5B8; /* Color crema más claro y legible sobre fondo oscuro */
 
  margin-bottom: 2.5rem;
 
@@ -852,7 +854,7 @@ body::before {
 
  top: 1rem; right: 1rem;
 
- background: rgba(44,26,14,.65);
+ background: rgba(44,26,14,.75); /* Más opaco para mejor contraste */
 
  backdrop-filter: blur(6px);
 
@@ -890,17 +892,21 @@ body::before {
 
 }
 
+/* CORRECCIÓN: Color de la descripción del menú para mejor contraste */
+
 .card-body p {
 
  font-size: .88rem;
 
- color: var(--text-soft);
+ color: #5A3A28; /* Un marrón más oscuro y legible que el --text-soft original */
 
  line-height: 1.6;
 
  margin-bottom: 1rem;
 
 }
+
+/* CORRECCIÓN: Color del precio para que destaque bien */
 
 .card-price {
 
@@ -910,7 +916,7 @@ body::before {
 
  font-weight: 600;
 
- color: var(--caramelo);
+ color: #B5673A; /* Un naranja/marrón más vibrante y legible */
 
 }
 
@@ -1006,9 +1012,11 @@ body::before {
 
 
 
+/* CORRECCIÓN: Color del texto en la sección "Nosotros" */
+
 .about-body {
 
- color: var(--text-mid);
+ color: #3E2A1F; /* Un color oscuro pero suave, legible sobre fondo crema claro */
 
  margin-bottom: 1rem;
 
@@ -1050,7 +1058,7 @@ body::before {
 
 .pillar strong { display: block; font-size: .95rem; color: var(--cafe-oscuro); }
 
-.pillar p { font-size: .83rem; color: var(--text-soft); margin: 0; }
+.pillar p { font-size: .83rem; color: #4A3020; margin: 0; } /* Ajuste para legibilidad */
 
 
 
@@ -1122,7 +1130,9 @@ body::before {
 
 .reservas-text .section-title { color: var(--crema); margin-bottom: 1rem; }
 
-.reservas-text > p { color: rgba(242,232,217,.65); margin-bottom: 2rem; font-size: .95rem; }
+/* CORRECCIÓN: Texto descriptivo de reservas sobre fondo oscuro */
+
+.reservas-text > p { color: #D1C3B5; /* Beige/gris claro legible */ margin-bottom: 2rem; font-size: .95rem; }
 
 
 
@@ -1136,9 +1146,11 @@ body::before {
 
 }
 
+/* CORRECCIÓN: Items de la lista de información */
+
 .reservas-info li {
 
- color: rgba(242,232,217,.75);
+ color: #D1C3B5; /* Mismo color legible */
 
  font-size: .9rem;
 
@@ -1192,6 +1204,8 @@ body::before {
 
 }
 
+/* CORRECCIÓN: Etiquetas del formulario más oscuras */
+
 .form-group label {
 
  font-size: .78rem;
@@ -1202,11 +1216,13 @@ body::before {
 
  text-transform: uppercase;
 
- color: var(--text-soft);
+ color: #4A3020; /* Un marrón oscuro legible */
 
 }
 
 
+
+/* CORRECCIÓN: Inputs y selects con mejor contraste */
 
 .form-group input,
 
@@ -1218,13 +1234,13 @@ body::before {
 
  padding: .75rem 1rem;
 
- border: 1.5px solid rgba(160,82,45,.2);
+ border: 1.5px solid rgba(160,82,45,.3);
 
  border-radius: var(--radius-sm);
 
- background: var(--vainilla);
+ background: #FFFFFF; /* Fondo completamente blanco para mejor contraste */
 
- color: var(--text-dark);
+ color: #1E1008; /* Texto casi negro */
 
  font-family: var(--font-body);
 
@@ -1284,11 +1300,15 @@ body::before {
 
  flex-shrink: 0;
 
+ background: white; /* Fondo blanco para el botón */
+
 }
 
 .counter-btn:hover { background: var(--cafe-medio); color: var(--crema); border-color: var(--cafe-medio); }
 
-.counter input { text-align: center; flex: 1; }
+/* CORRECCIÓN: Input del contador */
+
+.counter input { text-align: center; flex: 1; background: #FFFFFF; color: #1E1008; }
 
 
 
@@ -1354,6 +1374,8 @@ body::before {
 
 
 
+/* CORRECCIÓN: Tarjetas de contacto con mejor contraste de texto */
+
 .contacto-card {
 
  background: var(--blanco);
@@ -1396,7 +1418,9 @@ body::before {
 
 }
 
-.contacto-card p { font-size: .9rem; color: var(--text-soft); margin-bottom: .2rem; }
+/* Texto descriptivo más oscuro y legible */
+
+.contacto-card p { font-size: .9rem; color: #4A3020; margin-bottom: .2rem; }
 
 
 
@@ -1429,6 +1453,8 @@ body::before {
  font-weight: 500;
 
  transition: var(--transition);
+
+ background: white; /* Fondo blanco para los botones sociales */
 
 }
 
@@ -1498,7 +1524,9 @@ body::before {
 
 }
 
-.footer-brand p { font-size: .82rem; color: rgba(242,232,217,.4); }
+/* CORRECCIÓN: Texto de marca en footer */
+
+.footer-brand p { font-size: .82rem; color: #B8A99A; /* Un gris/marrón claro legible sobre fondo oscuro */ }
 
 
 
@@ -1514,6 +1542,8 @@ body::before {
 
 }
 
+/* CORRECCIÓN: Links del footer más visibles */
+
 .footer-nav a {
 
  font-size: .78rem;
@@ -1524,7 +1554,7 @@ body::before {
 
  text-transform: uppercase;
 
- color: rgba(242,232,217,.5);
+ color: #D1C3B5; /* Color más claro y legible */
 
  transition: color var(--transition);
 
@@ -1534,15 +1564,17 @@ body::before {
 
 
 
+/* CORRECCIÓN: Copyright del footer */
+
 .footer-copy {
 
  font-size: .78rem;
 
- color: rgba(242,232,217,.25);
+ color: #8A7562; /* Un gris/marrón más claro que el original */
 
  padding-top: 1rem;
 
- border-top: 1px solid rgba(242,232,217,.08);
+ border-top: 1px solid rgba(242,232,217,.15);
 
  width: 100%;
 
