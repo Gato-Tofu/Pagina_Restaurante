@@ -5,10 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.getElementById('hamburger');
   const navLinks  = document.getElementById('navLinks');
 
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 50);
-  }, { passive: true });
-
   // -- Hamburger: abrir/cerrar menú móvil --
   hamburger.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
@@ -172,15 +168,4 @@ document.addEventListener('DOMContentLoaded', () => {
       window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - navbar.offsetHeight, behavior: 'smooth' });
     });
   });
-
-
-  // -- Parallax suave en la imagen del hero --
-  const heroImg = document.querySelector('.hero-img');
-  if (heroImg) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY < window.innerHeight)
-        heroImg.style.transform = `translateY(${window.scrollY * 0.12}px)`;
-    }, { passive: true });
-  }
-
 });
